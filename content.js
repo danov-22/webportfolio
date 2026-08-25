@@ -56,7 +56,7 @@ const portfolioContent = {
         whatsapp: { label: "WhatsApp", value: "+62 895 0455 6187", href: "https://wa.me/6289504556187" },
       },
     },
-    footer: { signoff: "Designed and built by me." },
+    footer: { motto: "Keep learning, keep making, keep growing.", signoff: "Designed and built by me." },
   },
   id: {
     name: "Dany Martin",

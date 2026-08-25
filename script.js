@@ -45,6 +45,7 @@ function render() {
   setText("contact-copy", copy.contact.copy);
   setText("footer-name", copy.name);
   setText("footer-year", new Date().getFullYear());
+  setText("footer-motto", copy.footer.motto);
   setText("footer-signoff", copy.footer.signoff);
 
   document.getElementById("work-list").innerHTML = copy.work.items.map((item) => `
