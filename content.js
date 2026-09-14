@@ -7,8 +7,8 @@ const portfolioContent = {
     nav: { work: "Work", projects: "Projects", about: "About", timeline: "Timeline", contact: "Contact" },
     hero: {
       eyebrow: "A living archive / 2026",
-      headline: "I build, write, learn, and turn ideas into things people can use.",
-      supporting: "My work has moved through education, research, sales, writing, web design, and software projects. This is where I keep the things worth showing.",
+      headline: "Learn. Make. Grow.",
+      supporting: "My work has moved through education, research, marketing, writing, web design, and software projects. This is where I keep the things worth showing.",
       current: "Currently building websites, learning software development, and making useful small tools.",
       scroll: "See the work",
     },
@@ -48,7 +48,7 @@ const portfolioContent = {
     },
     contact: {
       label: "Whenever you like",
-      heading: "Say hello, if you’d like.",
+      heading: "Say hello.",
       copy: "If something here sparks a thought, a project, or just a question, you know where to find me.",
       actions: {
         email: { label: "Email", value: "dany10martin@gmail.com", href: "mailto:dany10martin@gmail.com" },
@@ -64,9 +64,9 @@ const portfolioContent = {
     nav: { work: "Karya", projects: "Proyek", about: "Tentang", timeline: "Linimasa", contact: "Kontak" },
     hero: {
       eyebrow: "Arsip yang terus hidup / 2026",
-      headline: "Saya membuat, menulis, belajar, dan mengubah ide menjadi sesuatu yang berguna.",
-      supporting: "Pekerjaan saya pernah bergerak di pendidikan, riset, sales, menulis, desain web, dan proyek software. Di sini saya menyimpan hal-hal yang layak ditunjukkan.",
-      current: "Saat ini membangun website, belajar software development, dan membuat alat-alat kecil yang berguna.",
+      headline: "Belajar. Buat. Tumbuh.",
+      supporting: "Pekerjaan saya pernah bergerak dari pendidikan, riset, marketing, menulis, desain web, dan proyek software. Di sini saya menyimpan hal-hal yang layak ditunjukkan.",
+      current: "Saat ini membuat website, belajar software development, dan membuat alat-alat kecil yang berguna.",
       scroll: "Lihat karya",
     },
     work: {
