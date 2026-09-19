@@ -10,6 +10,11 @@ function externalLink(link) {
   return link.startsWith("http");
 }
 
+function previewUrl(link) {
+  // Ask the screenshot service to refresh cached captures for every site.
+  return `https://image.thum.io/get/width/1200/crop/750/noanimate/maxAge/0/${link}`;
+}
+
 function setText(id, value) {
   const element = document.getElementById(id);
   if (element) element.textContent = value;
@@ -52,14 +57,14 @@ function render() {
     <a class="work-row${externalLink(item.href) ? " has-preview" : ""}" href="${item.href}" ${externalLink(item.href) ? 'target="_blank" rel="noreferrer"' : ""}>
       <span class="work-number">0${copy.work.items.indexOf(item) + 1}</span>
       <span class="work-copy"><span class="work-category">${item.category}</span><strong>${item.title}</strong><span>${item.description}</span></span>
-      ${externalLink(item.href) ? `<span class="work-preview" aria-hidden="true"><img src="https://image.thum.io/get/width/1200/crop/750/noanimate/${item.href}" alt="" loading="lazy"></span>` : ""}
+      ${externalLink(item.href) ? `<span class="work-preview" aria-hidden="true"><img src="${previewUrl(item.href)}" alt="" loading="lazy"></span>` : ""}
       <span class="work-arrow" aria-hidden="true">↗</span>
     </a>`).join("");
 
   document.getElementById("project-list").innerHTML = copy.projects.items.map((project) => `
     <article class="project-feature">
       <a class="project-preview" href="${project.demo}" target="_blank" rel="noreferrer" aria-label="View ${project.title}">
-        <img src="https://image.thum.io/get/width/1200/crop/750/noanimate/${project.demo}" alt="Preview of ${project.title}" loading="lazy">
+        <img src="${previewUrl(project.demo)}" alt="Preview of ${project.title}" loading="lazy">
       </a>
       <div class="project-title-row">
         <div>

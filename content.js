@@ -27,7 +27,7 @@ const portfolioContent = {
       intro: "The best way I know to learn a new layer of the web is to make a small, useful thing with it.",
       items: [
         { title: "Bewlet", type: "Personal Finance Web App", description: "A private, cross-device finance tracker with offline support and records that stay in the user's own Google Drive.", technologies: ["Web App", "Offline Support", "Google Drive Sync"], year: "2026", demo: "https://bewlet.vercel.app" },
-        { title: "Blockday", type: "Planning Web App", description: "A private time-blocking planner with flexible themes and schedules that can be shared only when you choose.", technologies: ["Web App", "PWA", "Google Sync"], year: "2026", demo: "https://blockday.vercel.app" },
+        { title: "Bedo", type: "Planning Web App", description: "A private time-blocking planner with flexible themes and schedules that can be shared only when you choose.", technologies: ["Web App", "PWA", "Google Sync"], year: "2026", demo: "https://b-do.vercel.app" },
       ],
     },
     currently: { label: "Right now", items: ["Building Bridgepoint", "Learning software development", "Building small web applications", "Writing occasionally"] },
@@ -48,7 +48,7 @@ const portfolioContent = {
     },
     contact: {
       label: "Whenever you like",
-      heading: "Say hello.",
+      heading: "Say hi.",
       copy: "If something here sparks a thought, a project, or just a question, you know where to find me.",
       actions: {
         email: { label: "Email", value: "dany10martin@gmail.com", href: "mailto:dany10martin@gmail.com" },
@@ -101,8 +101,8 @@ const portfolioContent = {
       link: "https://letterfeather.super.site/logs/portfolio",
     },
     contact: {
-      label: "Undangan terbuka",
-      heading: "Mari bicara.",
+      label: "Kapan aja",
+      heading: "Say hi.",
       copy: "Punya proyek, peran, kolaborasi, atau ide yang layak dibicarakan? Hubungi saya.",
       actions: {
         email: { label: "Email", value: "dany10martin@gmail.com", href: "mailto:dany10martin@gmail.com" },
