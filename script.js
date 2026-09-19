@@ -1,5 +1,6 @@
 const storageKeys = { theme: "portfolio-theme" };
 const navItems = ["work", "projects", "about", "timeline", "contact"];
+const previewRefresh = Date.now().toString();
 
 function deviceTheme() {
   const hour = new Date().getHours();
@@ -11,8 +12,11 @@ function externalLink(link) {
 }
 
 function previewUrl(link) {
-  // Ask the screenshot service to refresh cached captures for every site.
-  return `https://image.thum.io/get/width/1200/crop/750/noanimate/maxAge/0/${link}`;
+  // maxAge alone can still return an old image from the service or browser cache.
+  // Give each page load a new capture URL; keep the actual destination links clean.
+  const captureUrl = new URL(link);
+  captureUrl.searchParams.set("portfolio_preview", previewRefresh);
+  return `https://image.thum.io/get/width/1200/crop/750/noanimate/maxAge/0/${captureUrl.href}`;
 }
 
 function setText(id, value) {
