@@ -28,6 +28,7 @@ const portfolioContent = {
       items: [
         { title: "Bewlet", type: "Personal Finance Web App", description: "A private, cross-device finance tracker with offline support and records that stay in the user's own Google Drive.", technologies: ["Web App", "Offline Support", "Google Drive Sync"], year: "2026", demo: "https://bewlet.vercel.app" },
         { title: "Bedo", type: "Planning Web App", description: "A private time-blocking planner with flexible themes and schedules that can be shared only when you choose.", technologies: ["Web App", "PWA", "Google Sync"], year: "2026", demo: "https://b-do.vercel.app" },
+        { title: "DropChat", type: "Group Chat Web App", description: "An encrypted group chat with temporary 24-hour rooms and private invite links. No accounts needed.", technologies: ["Web App", "Encrypted Chat", "Cloudflare Workers"], year: "2026", demo: "https://dropchat.24h-only.workers.dev/" },
       ],
     },
     currently: { label: "Right now", items: ["Building Bridgepoint", "Learning software development", "Building small web applications", "Writing occasionally"] },
@@ -47,8 +48,8 @@ const portfolioContent = {
       link: "https://letterfeather.super.site/logs/portfolio",
     },
     contact: {
-      label: "Whenever you like",
-      heading: "Say hi.",
+      label: "Drop in",
+      heading: "and say hello.",
       copy: "If something here sparks a thought, a project, or just a question, you know where to find me.",
       actions: {
         email: { label: "Email", value: "dany10martin@gmail.com", href: "mailto:dany10martin@gmail.com" },
